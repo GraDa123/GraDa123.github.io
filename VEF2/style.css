@@ -1,0 +1,48 @@
+body{
+    display: grid;
+    justify-content: center;
+}
+
+div {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    animation: example 2s infinite ;
+    overflow: hidden;
+  }
+  @keyframes example {
+    0% {background-color: black;}
+    33% {background-color: gray;}
+    66% {background-color: darkgray;}
+    100% {background-color: gray;}
+
+  }
+  .ad{
+      position: relative;
+      left: -230px;
+      animation: textihreyfist 2s infinite, litur 2s infinite;
+    
+  }
+  @keyframes textihreyfist{
+      0%{left: -150px}
+      70%{transform: scale(2);}
+      100%{left: 400px;}
+  }
+  @keyframes litur{
+      0%{color: white;}
+      33%{color: gray;}
+      66%{color: black;}
+      100%{color: black;}
+      
+  }
+  .add{
+    position: relative; top: 100px;
+    text-align: center;
+    animation: hringur 2s infinite;
+    color: silver;
+  }
+
+  @keyframes hringur{
+      from{transform: rotate(0deg);}
+      to{transform: rotate(360deg)}
+  }
