@@ -1,0 +1,9 @@
+
+svg{
+    justify-content: center;
+    animation: wush 10s infinite;
+}
+@keyframes wush{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
