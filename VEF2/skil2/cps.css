@@ -1,7 +1,7 @@
 
 svg{
     justify-content: center;
-    animation: wush 10s infinite;
+    animation: wush 5s infinite;
 }
 @keyframes wush{
     from{transform: rotate(0deg);}
