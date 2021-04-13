@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>Skóla Starfið</caption>
+        <thead>
+          <tr>
+            <th scope="col">Áfangi</th>
+            <th scope="col">Verkefni</th>
+            <th scope="col">Buin</th>
+            <th scope="col">Eftir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Áfangi">VefÞ</td>
+            <td data-label="Verkefni">7</td>
+            <td data-label="Buin">4</td>
+            <td data-label="Eftir">3</td>
+          </tr>
+          <tr>
+            <td data-label="Áfangi">Kest</td>
+            <td data-label="Verkefni">5</td>
+            <td data-label="Buin">2</td>
+            <td data-label="Eftir">3</td>
+          </tr>
+          <tr>
+            <td data-label="Áfangi">Forr</td>
+            <td data-label="Verkefni">5</td>
+            <td data-label="Buin">5</td>
+            <td data-label="Eftir">0</td>
+          </tr>
+          <tr>
+            <td data-label="Áfangi">Verk</td>
+            <td data-label="Verkefni">6</td>
+            <td data-label="Buin">3</td>
+            <td data-label="Eftir">3</td>
+          </tr>
+        </tbody>
+      </table>	
+      <form>
+        <p>
+          <fieldset>
+            <legend>Do you have a driver's license?<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+            <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+            <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+          </fieldset>
+        </p>
+        <p>
+          <label for="n1">How old are you?</label>
+          <input type="number" min="13" max="120" step="1" id="n1" name="age"
+                 pattern="\d+">
+        </p>
+        <p>
+          <label for="t1">What is your gender?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+          <input type="text" id="t1" name="fruit" list="l1" required
+                 pattern="[Mm]ale|[Ff]male|[Oo]Other">
+          <datalist id="l1">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</opion>
+          </datalist>
+        </p>
+        <input type="date" id="myDate" value="yyyy-mm-dd">
+        <p>
+          <label for="t2">What's your e-mail address?</label>
+          <input type="email" id="t2" name="email">
+        </p>
+        <p>
+          <label for="t3">Leave a short message</label>
+          <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+        </p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Are you a human?</label>
+        <p>
+          <button>Submit</button>
+        </p>
+      </form>
+</body>
+</html>
